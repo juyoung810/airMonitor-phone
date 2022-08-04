@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>실외 공기질 모니터</title>
+
+    <!-- style -->
+    <link rel="stylesheet" href="./css/state.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/phone.css" />
+    <!-- 웹 폰트 -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- 헤더 -->
+        <header>
+            <!-- 비 반응형 이동 -->
+            <a href="./phone_login_nr.html"><span class="back-icon ir_pm">이전</span></a>
+            <div class="title">
+                <h1>서울 초등학교</h1>
+            </div>
+            <div class="sel-type">
+                <button class="first sel" href="#">전체</button>
+                <button class="last" href="#">즐겨찾기</button>
+            </div>
+        </header>
+        <!-- //헤더 -->
+        <nav>
+            <h3>학년과 반을 선택해주세요</h3>
+            <div class="dropdown-layer">
+                <!-- 학년 선택 드롭 박스 -->
+                <div class="dropdown level">
+                    <a href="#" class="drop-btn">
+                        <span class="drop-content">2학년</span>
+                        <span class="drop-icon"></span>
+                    </a>
+                    <ul class="drop-opt">
+                        <li>1학년</li>
+                        <li>2학년</li>
+                        <li>3학년</li>
+                        <li>4학년</li>
+                    </ul>
+                </div>
+                <!-- // 학년 선택 드롭 박스 -->
+                <!-- 반 선택 드롭 박스 -->
+                <div class="dropdown class">
+                    <a href="#" class="drop-btn">
+                        <span class="drop-content">1반</span>
+                        <span class="drop-icon"></span>
+                    </a>
+                    <ul class="drop-opt">
+                        <li>1반</li>
+                        <li>2반</li>
+                        <li>3반</li>
+                        <li>4반</li>
+                    </ul>
+                </div>
+                <!-- // 반 선택 드롭 박스 -->
+                <a href="#" class="btn_star"><span class="star_img ir_pm">즐겨찾기</span></a>
+            </div>
+            <!-- 즐겨찾기 - 검색어 선택 -->
+
+            <form class="input-layer">
+                <span>학년과 반을 입력해주세요</span>
+                <a href="#"><span class="ir_pm">검색하기</span></a>
+                <article class="input-history">
+                    <ul>
+                        <li>
+                            <p>2학년 1반</p>
+                            <a href="#"><span class="ir_pm">취소하기</span></a>
+                        </li>
+                        <li>
+                            <p>2학년 2반</p>
+                            <a href="#"><span class="ir_pm">취소하기</span></a>
+                        </li>
+                        <li>
+                            <p>2학년 3반</p>
+                            <a href="#"><span class="ir_pm">취소하기</span></a>
+                        </li>
+                        <li>
+                            <p>2학년 4반</p>
+                            <a href="#"><span class="ir_pm">취소하기</span></a>
+                        </li>
+                    </ul>
+                </article>
+            </form>
+
+            <!-- // 즐겨찾기 - 선택 -->
+        </nav>
+        <main>
+            <section class="outside">
+                <h2>학교 실외 공기질 현황</h2>
+                <div class="air-info">
+                    <ul>
+                        <!--state.css 배경 선택 -->
+                        <li class="bg-blue">
+                            <div class="grad">
+                                <div class="air-name">미세먼지<span>PM10</span></div>
+                                <div class="air-de air-state">좋음</div>
+                            </div>
+                        </li>
+                        <li class="bg-orange">
+                            <div class="grad">
+                                <div class="air-name">초미세먼지<span>PM2.5</span></div>
+                                <div class="air-de">나쁨</div>
+
+                            </div>
+                        </li>
+                        <li class="bg-green last">
+                            <div class="grad">
+                                <div class="air-name">
+                                    이산화탄소 <span>CO2</span>
+                                </div>
+                                <div class="air-de">보통</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="air-info2">
+                    <ul>
+                        <li><span class="air2-name">온도</span><span class="air2-num">27.5
+                                C</span></li>
+                        <li class="last"><span class="air2-name">습도</span><span class="air2-num">32.5 %</span></li>
+                    </ul>
+                </div>
+            </section>
+            <section class="inside">
+                <h2>실내 공기질 현황</h2>
+                <div class="air-info">
+                    <ul>
+                        <li class="bg-blue">
+                            <div class="grad">
+                                <div class="air-name">미세먼지<span>PM10</span></div>
+                                <div class="air-de air-state">좋음</div>
+                            </div>
+                        </li>
+                        <li class="bg-red">
+                            <div class="grad">
+                                <div class="air-name">초미세먼지<span>PM2.5</span></div>
+                                <div class="air-de">매우나쁨</div>
+
+                            </div>
+                        </li>
+                        <li class="bg-green last">
+                            <div class="grad">
+                                <div class="air-name">
+                                    이산화탄소 <span>CO2</span>
+                                </div>
+                                <div class="air-de">보통</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="air-info3">
+                    <ul>
+                        <li><span class="air2-name">온도</span><span class="air2-num">27.5
+                                C</span></li>
+                        <li><span class="air2-name">습도</span><span class="air2-num">32.5 %</span></li>
+                        <li class="last"><span class="air2-name">재실감지</span><span class="air2-num">OFF</span></li>
+                    </ul>
+                </div>
+                <!-- 데이터 존재 하지 않는 경우 -->
+                <div class="none-info">
+                    <span class="none-img ir_pm">학교이미지</span>
+                    <strong>데이터가 없습니다</strong>
+                </div>
+                <!-- // 데이터 존재 하지 않는 경우 -->
+            </section>
+        </main>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./js/value.js"></script> <!-- 값 따라 css 변경 -->
+    <!-- <script src="./js/responsive.js"></script> -->
+    <script src="./js/phone.js"></script>
+</body>
+
+</html>

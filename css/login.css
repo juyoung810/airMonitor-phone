@@ -1,0 +1,85 @@
+#wrap {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/phone_main_bg.png) no-repeat center;
+  background-size: cover; /* contain이 맞나?*/
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  overflow: hidden;
+}
+header {
+  margin: 15vh 21vw 10vh 21vw;
+  text-align: center;
+}
+header h4 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 2vh;
+  text-align: center;
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}
+header h2 {
+  margin-top: 0.5vh;
+  font-family: "Noto Sans KR";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 4vh;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #ffffff;
+}
+main {
+  width: 100vw;
+  height: 100vh;
+
+  background: #ffffff;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(104px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 50px 50px 0px 0px;
+  overflow: hidden;
+}
+main h3 {
+  width: 43vw;
+  height: 6vh;
+  margin: 8vh 29vw 6vh 29vw;
+  border-top: 1px solid #4252ae;
+  border-bottom: 1px solid #4252ae;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 6vh;
+  /* identical to box height */
+
+  text-align: center;
+
+  /* Gray 1 */
+
+  color: #333333;
+}
+main a {
+  display: block;
+  width: 46vw;
+  height: 6vh;
+
+  margin-left: 28vw;
+  background: #4252ae;
+  border: 1px solid #f9f9f9;
+  border-radius: 31px;
+  text-align: center;
+  line-height: 6vh;
+
+  font-weight: 700;
+  font-size: 16px;
+  /* identical to box height */
+
+  letter-spacing: -0.02em;
+
+  color: #ffffff;
+}

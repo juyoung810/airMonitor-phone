@@ -1,0 +1,492 @@
+#wrap {
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/phone_main_bg.png) no-repeat center;
+  background-size: cover;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  overflow: hidden;
+}
+/* 헤더 */
+header {
+  margin: 5vh 7vw 0 7vw; /* state bar */
+  width: 87vw;
+  height: auto;
+  overflow: hidden;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  position: relative;
+}
+header a {
+  width: 13vw;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: -2vw;
+}
+header a .back-icon {
+  height: 2.8vh;
+  width: 6vw;
+  background: url(../img/arrow02.png) no-repeat center;
+  background-size: contain;
+}
+header .title {
+  overflow: hidden;
+  text-align: center;
+  height: 2.8vh;
+}
+
+header .title h1 {
+  display: block;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2.8vh;
+
+  text-align: center;
+  width: 100%;
+  color: #ffffff;
+}
+header div.sel-type {
+  margin-top: 3vh;
+  height: 8vh;
+  overflow: hidden;
+}
+header div.sel-type button {
+  display: inline-block;
+  width: 41vw;
+  height: 5vh;
+
+  border-radius: 21px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 5vh;
+  margin-right: 3vw;
+  cursor: pointer;
+
+  color: #3e4b6e;
+  background: #1e2949;
+}
+header div.sel-type button.last {
+  margin-right: 0;
+}
+/* 선택된 버튼에 class 추가 통해 색상 변경 */
+header div.sel-type .sel {
+  background: #3f51b5;
+  color: #ffffff;
+}
+/* 학년 반 선택 내비게이션 layer */
+nav {
+  display: block;
+  margin: 0 7vw 0 7vw;
+  height: 11vh;
+  overflow: visible;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+}
+nav h3 {
+  margin-top: 2vh;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2vh;
+
+  color: #ffffff;
+}
+
+/* 학년, 반 선택 드롭 박스 */
+nav .dropdown-layer {
+  margin-top: 2vh;
+  height: 5vh;
+  overflow: visible;
+}
+nav .dropdown {
+  height: inherit;
+  float: left;
+  overflow: visible;
+  position: relative;
+}
+nav a.drop-btn {
+  display: block;
+  float: left;
+  width: 34vw;
+  height: inherit;
+
+  margin-right: 2vw;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  overflow: hidden;
+}
+nav .drop-content {
+  margin: 1vh 0 1vh 6vw;
+  float: left;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 3vh;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+nav .drop-icon {
+  float: right;
+  width: 4vw;
+  height: 1vh;
+  margin-top: 2vh;
+  margin-right: 4vw;
+  background: url(../img/Polygon_2.png) no-repeat center;
+  background-size: contain;
+}
+nav ul.drop-opt {
+  display: none;
+  width: 34vw;
+  background: #ffffff;
+  border-radius: 8px;
+
+  position: absolute;
+  top: 5vh;
+  left: 0;
+}
+nav .drop-opt li {
+  display: block;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  height: 4vh;
+  text-align: left;
+
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 4vh;
+  padding-left: 6vw;
+}
+nav .btn_star {
+  display: block;
+  float: left;
+  width: 11vw;
+  height: inherit;
+  background: url(../img/Star_none.png) no-repeat center
+    rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+}
+nav .click {
+  background: url(../img/Star_1.png) no-repeat center rgba(255, 255, 255, 0.06);
+}
+/* 즐겨찾기 - 학년 반 검색창 */
+nav .input-layer {
+  display: none;
+  margin-top: 2vh;
+
+  width: 87vw;
+  height: 5vh;
+
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+
+  position: relative;
+  overflow: visible;
+}
+
+nav .input-layer span {
+  display: inline-block;
+  width: 66vw;
+  height: 100%;
+  background: rgba(255, 255, 255, 0);
+  padding-left: 6vw;
+
+  line-height: 5vh;
+  font-weight: 700;
+  font-size: 14px;
+  text-align: left;
+  color: #1e2949;
+}
+nav .input-layer > a {
+  display: inline-block;
+  vertical-align: middle;
+  width: 9vw;
+  height: 100%;
+  position: relative;
+  line-height: 5vh;
+  margin-left: 2vw;
+}
+nav .input-layer > a > span {
+  /* 즐겨찾기 검색 이미지 */
+  position: absolute;
+  top: 1.5vh;
+  right: 0;
+  background: url(../img/qqq.png) no-repeat center;
+  background-size: contain;
+  width: 5vw;
+  height: 2vh;
+}
+nav .input-layer .input-history {
+  display: none;
+  width: 87vw;
+  max-height: 18vh;
+
+  background: #ffffff;
+  border-radius: 8px;
+
+  position: absolute;
+  top: 5vh;
+  left: 0px;
+}
+nav .input-history li {
+  height: 2vh;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2vh;
+  /* identical to box height */
+
+  color: #222222;
+
+  margin-top: 2vh;
+  margin-left: 6vw;
+  margin-right: 4vw;
+  text-align: justify;
+  vertical-align: bottom;
+  cursor: pointer;
+}
+nav .input-history li::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+nav .input-history li:first-child {
+  margin-top: 2vh;
+}
+nav .input-history li:last-child {
+  margin-bottom: 2vh;
+}
+nav .input-history li > p {
+  display: inline-block;
+}
+nav .input-history li a {
+  display: inline-block;
+  height: inherit;
+  width: 4vw;
+  text-align: right;
+  padding-right: 4vw;
+}
+nav .input-history li span {
+  display: inline-block;
+  background: url(../img/delete.png) no-repeat center;
+  background-size: contain;
+  vertical-align: middle;
+  width: 2vw;
+  height: 1vh;
+}
+/* main 날씨 정보 layer */
+main {
+  margin: 0 7vw 0 7vw;
+  height: 57vh;
+  overflow: visible;
+}
+main h2 {
+  margin-bottom: 2vh;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2vh;
+  /* identical to box height */
+  text-align: left;
+  color: #ffffff;
+}
+main .outside {
+  margin-top: 4vh;
+  height: 24vh;
+  overflow: visible;
+}
+main .inside {
+  margin-top: 4vh;
+  height: 26vh;
+  overflow: visible;
+}
+/* 네모 아이콘 날씨 표기 */
+main .air-info {
+  height: 11vh;
+  margin-bottom: 1.5vh;
+}
+main .air-info ul {
+  overflow: visible;
+}
+main .air-info li {
+  display: block;
+  float: left;
+  width: 26.5vw;
+  height: inherit;
+  margin-right: 3vw;
+  /* margin-bottom: 1.5vh; */
+  box-shadow: 6px 6px 10.5px rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+}
+main .air-info li.last {
+  margin-right: 0;
+}
+main .air-info li .grad {
+  width: 100%;
+  height: 7vh;
+  margin: 2vh 0 2vh 0;
+  /* background: url(../img/wave_4.png) no-repeat center; */
+  overflow: visible;
+  /* resize: both; */
+  border-radius: 5px;
+}
+main .air-info li .air-name {
+  margin-left: 3vw;
+  font-weight: 600;
+  font-size: 10px;
+  line-height: 1vh;
+  text-align: left;
+
+  color: #ffffff;
+}
+main .air-info li .air-name span {
+  display: block;
+  margin-top: 0.5vh;
+  margin-bottom: 2vh;
+  font-weight: 500;
+}
+main .air-info li .air-de {
+  float: left;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 2vh;
+  text-align: center;
+  margin-left: 3vw;
+  vertical-align: bottom;
+  color: #ffffff;
+}
+
+/* 실외 날씨 상세 */
+main .outside .air-info2 {
+  width: 87vw;
+  height: 7vh;
+  background: linear-gradient(
+    127.67deg,
+    rgba(255, 255, 255, 0.108) 20.99%,
+    rgba(255, 255, 255, 0.0297) 74.75%
+  );
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+}
+main .air-info2 ul {
+  overflow: visible;
+}
+main .air-info2 li {
+  margin: 2vh 0 2vh 0;
+  float: left;
+  height: 3vh;
+  width: 43vw;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: visible;
+  text-align: center;
+}
+main .air-info2 li.last {
+  border-right: none;
+}
+
+main .air-info2 li .air2-name {
+  display: inline-block;
+  padding-bottom: 0.5vh;
+  font-weight: 500;
+  font-size: 10px;
+  /* line-height: 29px; */
+  color: #ffffff;
+}
+main .air-info2 li .air2-num {
+  display: inline-block;
+  margin-left: 4vw;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 3vh;
+  /* identical to box height */
+  color: #ffffff;
+}
+
+/* 실내 날씨 상세 */
+main .air-info3 {
+  width: 87vw;
+  height: 9vh;
+  background: linear-gradient(
+    127.67deg,
+    rgba(255, 255, 255, 0.108) 20.99%,
+    rgba(255, 255, 255, 0.0297) 74.75%
+  );
+  box-shadow: 4px 4px 7px rgba(0, 0, 0, 0.28);
+  border-radius: 20px;
+}
+main .air-info3 ul {
+  overflow: visible;
+}
+main .air-info3 li {
+  margin: 2vh 0 2vh 0;
+  float: left;
+  height: 5vh;
+  width: 28vw;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  overflow: visible;
+  text-align: center;
+}
+main .air-info3 li.last {
+  border-right: none;
+}
+
+main .air-info3 li .air2-name {
+  display: block;
+  padding-bottom: 0.5vh;
+  font-weight: 500;
+  font-size: 10px;
+  /* line-height: 29px; */
+
+  color: #ffffff;
+}
+main .air-info3 li .air2-num {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 3vh;
+  /* identical to box height */
+
+  color: #ffffff;
+}
+
+/*선택된 반 없음 */
+main .inside .none-info {
+  display: none;
+  width: 87vw;
+  height: 19vh;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
+  text-align: center;
+  overflow: hidden;
+}
+main .none-info .none-img {
+  display: block;
+  margin-top: 5vh;
+  margin-left: 34vw;
+  background: url(../img/school.png) center no-repeat;
+  background-size: contain;
+  width: 18vw;
+  height: 7vh;
+}
+
+main .none-info strong {
+  margin-top: 1vh;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1vh;
+  text-align: center;
+
+  color: #1e2949;
+}
+
+/* 즐겨찾기 목록 - 외부 화면 흐리게 */
+.mask {
+  position: fixed;
+
+  box-shadow: rgba(0, 0, 0, 0.5) 0 0 0 9999px,
+    rgba(0, 0, 0, 0.5) 2px 2px 3px 3px;
+
+  z-index: 100;
+}

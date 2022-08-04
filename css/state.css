@@ -1,0 +1,70 @@
+/* 대기 상태 별 font 색상 지정 */
+.font-blue {
+  color: #409ae0;
+}
+.font-red {
+  color: #ce2e64;
+}
+.font-green {
+  color: #519750;
+}
+.font-orange {
+  color: #f0662b;
+}
+
+/* 대기 상태 별 배경 색상 지정 */
+/* .bg-blue {
+  background: linear-gradient(
+      191.52deg,
+      #61abf7 10.91%,
+      rgba(137, 195, 255, 0.92) 38.13%,
+      #61abf7 75.17%
+    )
+    repeat;
+}
+.bg-red {
+  background: linear-gradient(
+    214.31deg,
+    #ec5389 11.81%,
+    #e77a9f 98.94%,
+    #dd4f7f 98.94%
+  );
+}
+.bg-green {
+  background: linear-gradient(
+    191.52deg,
+    #078d04 10.91%,
+    #459b44 38.13%,
+    #519750 75.17%
+  );
+}
+.bg-orange {
+  background: linear-gradient(
+    214.31deg,
+    #f07540 11.81%,
+    #e49861 98.94%,
+    #c47338 98.94%
+  );
+} */
+
+/* 대기 상태 별 그라데이션 */
+/* .grad {
+  background: url(../img/wave_4.png) no-repeat center;
+  background-size: cover;
+} */
+.bg-blue {
+  background: url(../img/grad_1.png) no-repeat center;
+  background-size: cover;
+}
+.bg-red {
+  background: url(../img/grad_2.png) no-repeat center;
+  background-size: cover;
+}
+.bg-green {
+  background: url(../img/grad_3.png) no-repeat center;
+  background-size: cover;
+}
+.bg-orange {
+  background: url(../img/grad_4.png) no-repeat center;
+  background-size: cover;
+}
